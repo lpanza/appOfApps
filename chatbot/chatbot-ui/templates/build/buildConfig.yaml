@@ -3,6 +3,10 @@ kind: BuildConfig
 metadata:
   name: chatbot-ui-buildconfig
 spec:
+  resources:
+    limits:
+      cpu: 1000m
+      memory: 4Gi
   triggers:
   - type: ConfigChange
   source:
