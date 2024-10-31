@@ -42,7 +42,7 @@ runtime:
   maxModelLength: 15344
   maxSeqLength: 8192
   gpuMemoryUtilization: 1
-  servedModelName: Mistral-7B-Instruct-v0.3
+  servedModelName: granite-7b-instruct
   image: quay.io/modh/vllm:rhoai-2.12
   # image: docker.io/vllm/vllm-openai:v0.6.2
   # image: quay.io/modh/vllm:rhoai-2.14-cuda-1515395
