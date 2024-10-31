@@ -10,7 +10,7 @@ repo:
 
 # Namespace for the ArgoCD Application
 gitops:
-  namespace: openshift-gitops
+  namespace: composer-ai--runtime-int
 
 # Passing this value to all of the sub-applications to make it so we can dynamically figure out urls
 clusterDomain: apps.stc-ai-e1-dev.bpis.p1.openshiftapps.com
