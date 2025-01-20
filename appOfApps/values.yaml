@@ -15,23 +15,23 @@ defaultValuesFile: values.yaml
 applications:
   - name: vllm-model
     path: vllm
-    namespaceSuffix: apps
+    namespaceSuffix: -runtime-int
   - name: weaviate
     path: weaviate
-    namespaceSuffix: apps
+    namespaceSuffix: -runtime-int
     enabled: false
   - name: elasticsearch
     path: elasticsearch
-    namespaceSuffix: apps
+    namespaceSuffix: -runtime-int
   - name: kfp-pipeline
     path: kfp
-    namespaceSuffix: apps
+    namespaceSuffix: -runtime-int
   - name: quarkus-llm-router
     path: conductor/quarkus-llm-router
-    namespaceSuffix: apps
+    namespaceSuffix: -runtime-int
   - name: chatbot-ui
     path: chatbot-ui
-    namespaceSuffix: apps
+    namespaceSuffix: -runtime-int
     # Add ignoreDifferences to allow deployment to be updated by ImageStream
     ignoreDifferences:
       - group: apps
@@ -40,7 +40,7 @@ applications:
           - /spec/template/spec/containers/0/image
   - name: mongodb
     path: conductor/mongodb
-    namespaceSuffix: apps
+    namespaceSuffix: -runtime-int
   - name: bootstrap
     path: util/bootstrap
-    namespaceSuffix: apps
+    namespaceSuffix: -runtime-int
